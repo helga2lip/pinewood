@@ -1,0 +1,19 @@
+.hero {
+    background-color: purple;
+
+    &__title {
+        color: #f8e694;
+    }
+
+    &__description {
+        color: aquamarine;
+
+        &-number {
+            font-size: 2em;
+            color: wheat;
+            font-weight: bold;
+        }
+    }
+
+    
+}
