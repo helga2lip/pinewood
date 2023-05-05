@@ -18,7 +18,7 @@ import browser from 'browser-sync';
 export const styles = () => {
 return gulp.src('src/styles/**/*.scss', { sourcemaps: true })
 .pipe(plumber())
-.pipe(concat('src/styles/index.scss'))
+.pipe(concat('index.scss'))
 .pipe(sass().on('error', sass.logError))
 .pipe(postcss([
 autoprefixer(),

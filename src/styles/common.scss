@@ -1,0 +1,130 @@
+@import "variables.scss";
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: $bgcolor;
+    color: $basicColor;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    overflow: hidden;
+  }
+  
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1780px;
+  }
+  
+  .button {
+    padding: 21px 32px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: $whiteColor;
+    background-color: $primary;
+    box-shadow: 3px 3px 20px rgba(85, 93, 36, 0.302), -4px -4px 20px #ffffff;
+    border: none;
+    border-radius: 78px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+    &:hover {
+        background-color: $primaryDark;
+    }
+
+    &:disabled {
+        background-color: $disabled;
+        cursor: auto;
+    }
+
+    &--secondary {
+        padding: 15px 30px;
+        height: 48px;
+        text-transform: none;
+        color: $secondary;
+        background-color: unset;
+        border: 3px solid $primary;
+    
+        &:hover {
+            background-color: unset;
+        }
+    
+        &:disabled{
+            color: $disabled;
+            background: rgba(255, 255, 255, 0.5);
+            border: 3px solid $disabled;
+        }
+
+        &.button--large {
+            height: 67px;
+            font-size: 18px;    
+            line-height: 21px;
+        }
+
+        &.button--small {
+            height: 48px;
+        }
+    }
+
+    &--icon {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+        &.button--large {
+            padding: 0;
+            width: 81px;
+            height: 81px;
+        }
+
+        &.button--small {
+            padding: 0;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &--large {
+        padding: 31px 39px;
+        height: 81px;
+        text-transform: uppercase;
+    }   
+
+    &--small {
+        padding: 17px 28px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+  }
