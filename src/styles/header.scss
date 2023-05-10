@@ -8,15 +8,25 @@
         @media screen and (max-width: 1600px) {
             min-height: 140px;
         }
+        @media screen and (max-width: 576px) {
+            min-height: 76px;
+        }
     }
 
     &__logo {
         margin: 0 76px 0 0;
+        width: 264px;
+        height: 87px;
 
         @media screen and (max-width: 1600px) {
             margin: 0 70px 0 0;
             width: 200px;
             height: 66px;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 132px;
+            height: 44px;
         }
     }
 
@@ -95,18 +105,23 @@
     &__toggler {
         display: none;
         margin: 0 0 0 auto;
+        border: none;
+        background: transparent;
 
         @media screen and (max-width: 1200px) {
             display: block;
         }
 
-        &-icon {
-            
+        &-icon {            
             width: 49px;
             height: 30px;
             fill: $basicColor;
+
+            @media screen and (max-width: 576px) {
+                width: 28px;
+                height: 16px;
+            }
         }
     }
-
-    
+  
 }

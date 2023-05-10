@@ -1,0 +1,18 @@
+.hero {
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-buttons {
+            display: flex;
+        }
+    }
+
+    
+}
