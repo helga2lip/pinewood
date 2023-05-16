@@ -35,35 +35,39 @@
         display: flex;
         flex-direction: column;
 
-        @media screen and (max-width: 1600px) {
-            padding: 26px 0 0;
-            max-width: 469px;
-        }
+            @media screen and (max-width: 1600px) {
+                padding: 26px 0 0;
+                max-width: 469px;
+            }
 
-        @media screen and (max-width: 992px) {
-            padding: 0;
-            max-width: 448px;
-        }
+            @media screen and (max-width: 992px) {
+                padding: 0;
+                max-width: 448px;
+            }
 
-        @media screen and (max-width: 820px) {
-            max-width: 410px;
-        }
+            @media screen and (max-width: 820px) {
+                max-width: 410px;
+            }
 
         &-buttons {
             display: flex;
             gap: 64px;
 
-        @media screen and (max-width: 1600px) {
-            gap: 30px;
-        }
+            @media screen and (max-width: 1600px) {
+                gap: 30px;
+            }
 
-        @media screen and (max-width: 992px) {
-            gap: 21px;
-        }
+            @media screen and (max-width: 992px) {
+                gap: 21px;
+            }
 
-        @media screen and (max-width: 820px) {
-            margin: auto 0 0;;
-        }
+            @media screen and (max-width: 820px) {
+                margin: auto 0 0;
+            }
+
+            @media screen and (max-width: 532px) {
+                gap: 11px;
+            }
         }
     }
 
@@ -97,6 +101,10 @@
             max-width: 242px;
         }
 
+        @media screen and (max-width: 576px) {
+            margin: 20px 0 20px;
+        }
+
         &-green {
             color: $primary;
         }
@@ -125,6 +133,10 @@
 
         @media screen and (max-width: 680px) {
             margin: 0 0 36px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 0 66px;
         }
     }
 
@@ -160,14 +172,27 @@
         @media screen and (max-width: 680px) {
             border-radius: 47px;
         }
+
+        @media screen and (max-width: 576px) {
+            border-radius: 40px;
+        }
+
+        @media screen and (max-width: 320px) {
+            border-radius: 20px;
+        }
+
     }
 
     &__calc-button {
         @media screen and (max-width: 992px) {
             height: 50px;
-            padding: 18px 21px;
+            padding: 18px 20px;
             font-size: 12px;
             line-height: 14px;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 11px;
         }
     }
     
