@@ -1,0 +1,127 @@
+.header {
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 160px;
+
+        @media screen and (max-width: 1600px) {
+            min-height: 140px;
+        }
+        @media screen and (max-width: 576px) {
+            min-height: 76px;
+        }
+    }
+
+    &__logo {
+        margin: 0 76px 0 0;
+        width: 264px;
+        height: 87px;
+
+        @media screen and (max-width: 1600px) {
+            margin: 0 70px 0 0;
+            width: 200px;
+            height: 66px;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 132px;
+            height: 44px;
+        }
+    }
+
+    &__menu {
+        margin: 0 auto 0 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+
+        &-item {
+            margin: 0 60px 0 0;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0 40px 0 0;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &-link {
+            color: $basicColor;
+            text-decoration: none;
+
+            &:hover {
+                border-bottom: 2px solid $primary;
+            }
+
+        @media screen and (max-width: 1600px) {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+    
+     @media screen and (max-width: 1200px) {
+            display: none;
+    }
+
+        &-icon {
+            margin: 0 19px 0 0;
+            width: 28px;
+            height: 28px;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0 18px 0 0;
+                width: 25px;
+                height: 24px;
+                fill: #306838;
+            }
+        }
+
+        &-link {
+            color: $basicColor;
+            text-decoration: none;
+            font-style: normal;
+            white-space: nowrap;
+
+            @media screen and (max-width: 1600px) {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__toggler {
+        display: none;
+        margin: 0 0 0 auto;
+        border: none;
+        background: transparent;
+
+        @media screen and (max-width: 1200px) {
+            display: block;
+        }
+
+        &-icon {            
+            width: 49px;
+            height: 30px;
+            fill: $basicColor;
+
+            @media screen and (max-width: 576px) {
+                width: 28px;
+                height: 16px;
+            }
+        }
+    }
+  
+}

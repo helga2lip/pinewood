@@ -18,7 +18,7 @@ import browser from 'browser-sync';
 export const styles = () => {
 return gulp.src('src/styles/**/*.scss', { sourcemaps: true })
 .pipe(plumber())
-.pipe(concat('src/styles/index.scss'))
+.pipe(concat('index.scss'))
 .pipe(sass().on('error', sass.logError))
 .pipe(postcss([
 autoprefixer(),
@@ -47,13 +47,13 @@ return gulp.src('src/js/script.js')
 // Images
 
 const optimizeImages = () => {
-return gulp.src('src/img/**/*.{png,jpg}')
+return gulp.src('src/img/**/*.{png,jpg,svg}')
 .pipe(squoosh())
 .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
-return gulp.src('src/img/**/*.{png,jpg}')
+return gulp.src('src/img/**/*.{png,jpg,svg}')
 .pipe(gulp.dest('build/img'))
 }
 
