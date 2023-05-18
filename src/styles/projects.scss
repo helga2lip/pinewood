@@ -1,3 +1,27 @@
 .projects {
-    background: blue;
+    margin: 0 0 193px;
+    
+    &__header {
+        margin: 0 0 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+    }
+
+    &__title {
+        max-width: 798px;
+
+        &-green {
+            color: $primary;
+        }
+    }
+
+    &__description {
+        max-width: 542px;
+    }
+
+    &__cards {
+        display: flex;
+    }
 }
