@@ -1,5 +1,9 @@
 .projects {
     margin: 0 0 193px;
+
+    @media screen and (max-width: 1600px) {
+        margin: 0 0 130px;
+    }
     
     &__header {
         margin: 0 0 80px;
@@ -7,10 +11,26 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
 
+        @media screen and (max-width: 1600px) {
+            margin: 0 0 111px;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin: 0 0 25px;
+        }
     }
 
     &__title {
         max-width: 798px;
+
+        @media screen and (max-width: 1600px) {
+            max-width: 599px;
+            font-size: 34px;
+        }
+
+        @media screen and (max-width: 992px) {
+            font-size: 22px;
+        }
 
         &-green {
             color: $primary;
@@ -19,6 +39,10 @@
 
     &__description {
         max-width: 542px;
+
+        @media screen and (max-width: 1600px) {
+            max-width: 464px;
+        }
     }
 
     &__cards {
@@ -27,6 +51,16 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
+
+        @media screen and (max-width: 1600px) {
+            max-width: 1163px;
+            gap: 46px;
+        }
+
+        @media screen and (max-width: 992px) {
+            max-width: 617px;
+            gap: 43px;
+        }
     }
 
     &__card {
@@ -35,11 +69,26 @@
         border-radius: 16px 16px 47px 47px;
         overflow: hidden;
 
+        @media screen and (max-width: 1600px) {
+            padding: 0 0 30px;
+            border-radius: 12px 12px 38px 38px;
+        }
+
         &-image {
             margin: 0 0 38px;
             width: 100%;
-            max-height: 388px;
+            height: 388px;
             display: flex;
+            object-fit: cover;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0 0 30px;
+                height: 310px;
+            }
+
+            @media screen and (max-width: 992px) {
+                margin: 0 0 45px;
+            }
         }
 
         &-description {
@@ -47,6 +96,33 @@
             max-width: 603px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0 20px 0 45px;
+                max-width: 492px;
+            } 
+
+            @media screen and (max-width: 992px) {
+                margin: 0 42px;
+                flex-direction: column;
+                gap: 35px;
+            }
+        }
+
+        &-name {
+            margin: 0;
+            font-size: 20px;
+            line-height: 24px;
+
+            @media screen and (max-width: 1600px) {
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            @media screen and (max-width: 992px) {
+                min-height: 42px;
+            }
         }
         
     }
@@ -55,5 +131,10 @@
         margin: 0 auto;
         max-width: 297px;
         height: 63px;
+
+        @media screen and (max-width: 992px) {
+            max-width: 232px;
+            height: 48px;
+        } 
     }
 }
