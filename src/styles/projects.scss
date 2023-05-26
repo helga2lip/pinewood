@@ -4,6 +4,14 @@
     @media screen and (max-width: 1600px) {
         margin: 0 0 130px;
     }
+
+    @media screen and (max-width: 992px) {
+        margin: 0 0 121px;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin: 0 0 127px;
+    }
     
     &__header {
         margin: 0 0 80px;
@@ -17,6 +25,12 @@
 
         @media screen and (max-width: 992px) {
             margin: 0 0 25px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 0 33px;
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -60,6 +74,11 @@
         @media screen and (max-width: 992px) {
             max-width: 617px;
             gap: 43px;
+        }
+
+        @media screen and (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -107,6 +126,10 @@
                 margin: 0 42px;
                 flex-direction: column;
                 gap: 35px;
+            }
+
+            @media screen and (max-width: 576px) {
+                margin: 0 40px;
             }
         }
 
