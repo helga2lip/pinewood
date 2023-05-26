@@ -1,16 +1,16 @@
 .services {
-    margin: 0 0 193px;
+    margin: 0 0 191px;
 
     @media screen and (max-width: 1600px) {
         margin: 0 0 130px;
     }
 
     @media screen and (max-width: 992px) {
-        margin: 0 0 121px;
+        margin: 0 0 103px;
     }
 
     @media screen and (max-width: 576px) {
-        margin: 0 0 127px;
+        margin: 0 0 76px;
     }
     
     &__header {
@@ -24,7 +24,7 @@
         }
 
         @media screen and (max-width: 992px) {
-            margin: 0 0 25px;
+            margin: 0 0 102px;
         }
 
         @media screen and (max-width: 576px) {
@@ -35,15 +35,18 @@
     }
 
     &__title {
-        max-width: 798px;
+        max-width: 589px;
 
         @media screen and (max-width: 1600px) {
-            max-width: 599px;
-            font-size: 34px;
+            max-width: 400px;
         }
 
         @media screen and (max-width: 992px) {
-            font-size: 22px;
+            max-width: 300px;
+        }
+
+        @media screen and (max-width: 576px) {
+            max-width: 285px;
         }
 
         &-green {
@@ -52,28 +55,32 @@
     }
 
     &__description {
-        max-width: 542px;
+        max-width: 513px;
 
         @media screen and (max-width: 1600px) {
-            max-width: 464px;
+            max-width: 443px;
+        }
+        @media screen and (max-width: 992px) {
+            max-width: 295px;
         }
     }
 
     &__cards {
-        margin: 0 auto 55px;
+        margin: 0 auto 57px;
         max-width: 1464px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 60px;
 
         @media screen and (max-width: 1600px) {
             max-width: 1163px;
-            gap: 46px;
+            gap: 29px;
         }
 
         @media screen and (max-width: 992px) {
             max-width: 617px;
-            gap: 43px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 75px;
         }
 
         @media screen and (max-width: 576px) {
