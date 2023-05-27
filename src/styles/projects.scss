@@ -61,18 +61,15 @@
 
     &__cards {
         margin: 0 auto 55px;
-        max-width: 1464px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
 
         @media screen and (max-width: 1600px) {
-            max-width: 1163px;
             gap: 46px;
         }
 
         @media screen and (max-width: 992px) {
-            max-width: 617px;
             gap: 43px;
         }
 
