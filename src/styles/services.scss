@@ -137,6 +137,15 @@
             line-height: 17px;
         }
         
+        &-button {
+            
+            &-icon {
+                margin: 0 0 0 20px;
+                width: 17px;
+                height: 18px;
+                fill: #ffffff;
+            }
+        }
     }
 
     &__button {
