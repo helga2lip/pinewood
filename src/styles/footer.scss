@@ -4,6 +4,10 @@
     &__wrapper {
         margin: 77px 0 98px 35px;
         display: flex;
+
+        @media screen and (max-width: 1600px) {
+            margin: 71px 27px 74px 28px;
+        }
     } 
 
     &__company {
@@ -11,9 +15,18 @@
         display: flex;
         flex-direction: column;
 
+        @media screen and (max-width: 1600px) {
+            margin: 0 228px 0 0;
+        }
+
         &-logo {
             margin: 0 0 14px 0;
             max-width: 264px;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0 0 17px 0;
+                max-width: 228px;
+            }
         }
 
         &-description {
@@ -21,6 +34,10 @@
             max-width: 192px;
             font-size: 14px;
             line-height: 16px;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0 0 18px;
+            }
         }
 
         &-data {
@@ -37,11 +54,19 @@
         display: flex;
         gap: 70px;
 
+        @media screen and (max-width: 1600px) {
+            margin: 48px 0 0;
+        }
+
         &-column {
             display: flex;
             flex-direction: column;
             gap: 29px;
             list-style-type: none;
+
+            @media screen and (max-width: 1600px) {
+                gap: 23px;
+            }
         }
         
         &-item {
@@ -56,14 +81,24 @@
             &:hover {
                 border-bottom: 2px solid $primary;
             }
+
+            @media screen and (max-width: 1600px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
     }
 
     &__contacts {
-        margin: 0 0 0 auto;
+        margin: 15px 0 0 auto;
         display: flex;
         flex-direction: column;
         gap: 17px;
+
+        @media screen and (max-width: 1600px) {
+            margin: 7px 0 0 auto;
+            gap: 24px;
+        }
 
         &-item {
             display: flex;
@@ -73,19 +108,38 @@
             margin: 0 37px 0 0;
             fill: #306838;
 
+            @media screen and (max-width: 1600px) {
+                margin: 0 24px 0 0;
+            }
+
             &--phone {
                 width: 28px;
                 height: 27px;
+
+                @media screen and (max-width: 1600px) {
+                    width: 21px;
+                    height: 20px;
+                }
             }
 
             &--mail {
                 width: 29px;
                 height: 21px;
+
+                @media screen and (max-width: 1600px) {
+                    width: 23px;
+                    height: 16px;
+                }
             }
 
             &--map {
                 width: 24px;
                 height: 28px;
+
+                @media screen and (max-width: 1600px) {
+                    width: 19px;
+                    height: 21px;
+                }
             }
         }
 
@@ -96,11 +150,21 @@
             &:hover {
                 box-shadow: 0 2px 0 $primary;
             }
+
+            @media screen and (max-width: 1600px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
 
         &-text {
             margin: 0;
-            padding: 0;            
+            padding: 0; 
+            
+            @media screen and (max-width: 1600px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
     }
 }
