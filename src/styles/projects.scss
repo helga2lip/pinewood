@@ -146,6 +146,12 @@
         }
 
         &-button {
+
+            @media screen and (max-width: 576px) {
+                padding: 18px 25px;
+                font-size: 14px;
+                line-height: 16px;
+            }
             
             &-icon {
                 margin: 0 0 0 20px;
