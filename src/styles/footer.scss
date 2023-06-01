@@ -13,6 +13,11 @@
             margin: 101px 60px 69px;
             flex-wrap: wrap;
         }
+
+        @media screen and (max-width: 576px) {
+            margin: 62px 0 18px;
+            flex-direction: column;
+        }
     } 
 
     &__company {
@@ -30,6 +35,11 @@
             order: 2;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
         }
 
         &-logo {
@@ -59,6 +69,11 @@
             @media screen and (max-width: 992px) {
                 order: 2;
                 margin: 0;
+            }
+
+            @media screen and (max-width: 576px) {
+                order: 1;
+                margin: 0 0 29px;
             }
         }
 
@@ -97,6 +112,10 @@
             margin: 0 auto 0 0;
             width: 50%;
             order: 1;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 0 60px;
         }
 
         &-column {
@@ -145,6 +164,11 @@
             margin: 0;
             width: 50%;
             order: 1;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 0 60px;
+            width: 100%;
         }
 
         &-item {
