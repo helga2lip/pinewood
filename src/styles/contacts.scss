@@ -1,0 +1,17 @@
+.contacts {
+
+    &__title {
+        margin: 0 0 94px;
+        text-align: center;
+    }
+
+    &__options {
+        display: flex;
+        justify-content: center;
+        gap: 141px;
+    }
+
+    &__call {
+        max-width: 389px;
+    }
+}
