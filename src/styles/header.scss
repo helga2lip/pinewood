@@ -51,6 +51,12 @@
             &:last-child {
                 margin: 0;
             }
+
+            &--active {
+                .header__menu-link {
+                    color: $primary;
+                }
+            }
         }
 
         &-link {
