@@ -195,3 +195,37 @@ body {
         line-height: 19px;
     }
   }
+
+  .modal__button-close {
+    position: absolute;
+    padding: 0;
+    top: 30px;
+    right: 38px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 31px;
+            height: 4px;
+            background-color: $basicColor;
+            transform: translate(-50%, -50%) rotate(45deg);
+}
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+
+  
