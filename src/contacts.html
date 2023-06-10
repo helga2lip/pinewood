@@ -134,6 +134,7 @@
           </p>
           <button
             class="contacts__button button button--secondary button--large"
+            data-modal="#order-call"
           >
             Заказать звонок
           </button>
@@ -259,30 +260,37 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal--closed" id="order-call">
       <div class="modal__wrapper">
         <button class="modal__button-close" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <h2 class="modal__title">Мы перезвоним Вам в течении 15 минут</h2>
         <form class="modal__form" action="#" method="post">
-          <input
-            class="input"
-            type="text"
-            placeholder="Ваше имя"
-            name="name"
-            required
-          />
-          <input
-            class="input"
-            type="tel"
-            placeholder="Ваш телефон"
-            name="phone"
-            required
-          />
-          <button class="button" type="submit">Заказать звонок</button>
+          <div class="modal__form-field">
+            <input
+              class="input"
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              required
+            />
+          </div>
+          <div class="modal__form-field">
+            <input
+              class="input"
+              type="tel"
+              placeholder="Ваш телефон"
+              name="phone"
+              required
+            />
+          </div>
+          <button class="button modal__form-submit" type="submit">
+            Заказать звонок
+          </button>
         </form>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
