@@ -19,7 +19,23 @@
         width: 100%;
         background: $bgcolor;
         border-radius: 30px;
-        position: relative;        
+        position: relative;
+        
+        @media screen and (max-width: 1600px) {
+            padding: 97px 20px 73px;
+        }
+
+        @media screen and (max-width: 992px) {
+            padding: 49px 20px;
+            max-width: 513px;
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 76px 127px;
+            max-width: 320px;
+            border-radius: 20px 20px 0 0;
+        }
     }
 
     &__button-close {
@@ -34,6 +50,13 @@
         background: none;
         cursor: pointer;
         transition: 0.2s;
+
+        @media screen and (max-width: 992px) {
+            width: 14px;
+            height: 14px;
+            top: 20px;
+            right: 25px;
+        }
     
             &::before,
             &::after {
@@ -47,6 +70,11 @@
                 background-color: $basicColor;
                 border-radius: 2px;
                 transform: translate(-50%, -50%) rotate(45deg);
+
+                @media screen and (max-width: 992px) {
+                    width: 20px;
+                    height: 3px;
+                }
             }
     
             &::after {
@@ -62,6 +90,19 @@
         font-size: 32px;
         line-height: 38px;
         font-weight: 700;
+
+        @media screen and (max-width: 1600px) {
+            max-width: 255px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin: 0 auto 31px;
+            max-width: 178px;
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     &__form {
@@ -72,6 +113,10 @@
 
         &-field + &-field {
             margin: 12px 0 0;
+
+            @media screen and (max-width: 992px) {
+                margin: 8px 0 0;
+            }
         }
 
         &-submit {
@@ -80,6 +125,10 @@
             margin: 32px auto 0;
             font-size: 21px;
             line-height: 25px;
+
+            @media screen and (max-width: 992px) {
+                margin: 20px auto 0;
+            }
         }
     }
 }
