@@ -32,7 +32,7 @@
         }
 
         @media screen and (max-width: 576px) {
-            padding: 76px 127px;
+            padding: 76px 20px 127px;
             max-width: 320px;
             border-radius: 20px 20px 0 0;
         }
@@ -128,6 +128,21 @@
 
             @media screen and (max-width: 992px) {
                 margin: 20px auto 0;
+                height: 41px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &--icon {
+                margin: 0 0 0 27px;
+                width: 17px;
+                height: 18px;
+                fill: #ffffff;
+
+                @media screen and (max-width: 992px) {
+                    width: 11px;
+                    height: 12px;
+                }
             }
         }
     }
