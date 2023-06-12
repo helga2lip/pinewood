@@ -134,6 +134,7 @@
           </p>
           <button
             class="contacts__button button button--secondary button--large"
+            data-modal="#order-call"
           >
             Заказать звонок
           </button>
@@ -259,5 +260,46 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal--closed" id="order-call">
+      <div class="modal__wrapper">
+        <button class="modal__button-close" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <h2 class="modal__title">Мы перезвоним Вам в течении 15 минут</h2>
+        <form class="modal__form" action="#" method="post">
+          <div class="modal__form-field">
+            <input
+              class="input"
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              required
+            />
+          </div>
+          <div class="modal__form-field">
+            <input
+              class="input"
+              type="tel"
+              placeholder="Ваш телефон"
+              name="phone"
+              required
+            />
+          </div>
+          <button class="button modal__form-submit" type="submit">
+            Заказать звонок
+            <svg
+              class="modal__form-submit--icon"
+              viewBox="0 0 17 19"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 10.6245H12.9097L6.95891 16.9247L8.49957 18.5L17 9.50046L8.50043 0.5L7.01251 2.07712L12.9097 8.37735H0V10.6245Z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

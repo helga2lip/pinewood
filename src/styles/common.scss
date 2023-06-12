@@ -194,4 +194,26 @@ body {
         font-size: 16px;
         line-height: 19px;
     }
-  }
+}
+
+.input {
+    padding: 22px 24px;
+    width: 100%;
+    border: 3px solid #d4d4d4;
+    border-radius: 26px;
+    font-size: 21px;
+    line-height: 25px;
+    color: #515151;
+    background: #f6f4f1;
+
+    &:hover {
+        border: 3px solid $primaryDark;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 15px 16px 11px;
+        font-size: 16px;
+        line-height: 19px;
+        border-radius: 17px;
+    }
+}
