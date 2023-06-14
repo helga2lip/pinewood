@@ -10,10 +10,38 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 73px;
         row-gap: 50px;
+        list-style-type: none;
     }
 
     &__card {
+        padding: 50px 76px 50px 50px;
         border: 4px solid $primary;
         border-radius: 20px;
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-button {
+            text-transform: none;
+
+            &--icon {
+                    margin: 0 0 0 27px;
+                    width: 17px;
+                    height: 18px;
+                    fill: #ffffff;
+    
+                    @media screen and (max-width: 992px) {
+                        width: 11px;
+                        height: 12px;
+                    }
+            }
+        }
     }
 }
