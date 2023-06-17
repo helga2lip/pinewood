@@ -7,6 +7,7 @@
 
     &__cards {
         margin: 0 auto 161px;
+        max-width: 1467px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 73px;
@@ -16,7 +17,7 @@
 
     &__card {
         padding: 50px 76px 50px 50px;
-        background: url('../img/prices-card-background.svg') center center no-repeat;
+        background: url('../img/prices-card-background.svg') bottom right no-repeat;
         border: 4px solid $primary;
         border-radius: 20px;
 
@@ -55,6 +56,7 @@
         }
 
         &-button {
+            height: 63px;
             text-transform: none;
 
             &--icon {
