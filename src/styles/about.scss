@@ -1,0 +1,73 @@
+@import "variables.scss";
+
+.about {
+
+    &__hero {
+        padding: 0 0 103px;
+        display: flex;
+        gap: 62px;
+        background: url('../img/about-hero-background.svg') 65% bottom no-repeat;
+
+        &-title {
+            margin: 0 0 56px;
+            padding: 0;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 75px;
+    
+            @media screen and (max-width: 1600px) {
+                margin: 0 0 39px;
+                font-size: 36px;
+                line-height: 42px;
+            }
+    
+            @media screen and (max-width: 992px) {
+                margin: 0 0 32px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+    
+            @media screen and (max-width: 576px) {
+                margin: 0 0 19px;
+            }
+    
+            &-green {
+                color: $primary;
+            }
+        }
+
+        &-description {
+            margin: 0 0 35px;
+            padding: 0;
+            max-width: 637px;
+            font-size: 28px;
+            line-height: 32px;
+    
+            @media screen and (max-width: 1600px) {
+                margin: 0 0 30px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            &:last-of-type {
+                margin: 0 0 80px;
+            }
+        }
+
+        &-image {
+            max-width: 817px;
+            width: 100%;
+            align-self: center;
+            object-fit: contain;
+            border-radius: 60px;
+        }
+    }    
+
+    &__team {
+
+        &-cards {
+            display: flex;
+        }
+    }
+
+}
